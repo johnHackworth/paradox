@@ -55,7 +55,7 @@ pdx.app.Main.prototype = {
       model: this.currentModel,
       templateManager: this.templateManager
     });
-    this.currentModel.fetch();
+    this.currentController.initialized.done(this.currentModel.fetch.bind(this.currentModel));
   },
   initializeItemView: function(id) {
     $('.loader').removeClass('hidden');
@@ -70,7 +70,7 @@ pdx.app.Main.prototype = {
       templateManager: this.templateManager
     });
     this.currentController.isFullPage = true;
-    this.currentModel.fetch();
+    this.currentController.initialized.done(this.currentModel.fetch.bind(this.currentModel));
   }
 };
 
