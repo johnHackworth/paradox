@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="./bower_components/mocha/mocha.css" />
+  <style>
+     #fixture {
+      position: absolute;
+      top: -9999;
+      left: -9999;
+     };
+  </style>
+  <script src="./bower_components/underscore/underscore-min.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/backbone/backbone.js"></script>
+    <script src="./bower_components/chai/chai.js"></script>
+    <script src="./bower_components/sinon/index.js"></script>
+    <script src="./bower_components/mocha/mocha.js"></script>
+    <script> mocha.setup('bdd');</script>
+    <script src="./src/utils/namespace.js"></script>
+    <script src="./src/utils/templateManager.js"></script>
+    <script src="./src/config/paths.js"></script>
+    <script src="./src/common/controllers/base.controller.js"></script>
+    <script src="./src/news/models/newsItem.model.js"></script>
+    <script src="./src/news/models/newsItem.collection.js"></script>
+    <script src="./src/news/models/newsList.model.js"></script>
+    <script src="./src/news/controllers/newsItem.controller.js"></script>
+    <script src="./src/news/controllers/newsList.controller.js"></script>
+    <script src="./src/main/routers/routers.js"></script>
+    <script src="./src/main/controllers/main.js"></script>
+
+    <script src="./tests/utils/namespace.spec.js"></script>
+    <script src="./tests/utils/templateManager.spec.js"></script>
+    <script src="./tests/common/base.controller.spec.js"></script>
+    <script src="./tests/news/models/newsItem.model.spec.js"></script>
+    <script src="./tests/news/models/newsItem.collection.spec.js"></script>
+    <script src="./tests/news/models/newsList.model.spec.js"></script>
+    <script>
+      window.onload = function() {
+           mocha.run()
+      };
+    </script>
+ </head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>

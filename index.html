@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Paradox Interactive - Paradox Interactive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./style/fonts.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./style/main.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./style/loader.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./style/listView.css" media="all">
+
+  </head>
+  <body>
+    <div class="prxContent"></div>
+    <script src="./bower_components/underscore/underscore-min.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/backbone/backbone.js"></script>
+    <script src="./src/utils/namespace.js"></script>
+    <script src="./src/utils/templateManager.js"></script>
+    <script src="./src/config/paths.js"></script>
+    <script src="./src/common/controllers/base.controller.js"></script>
+    <script src="./src/news/models/newsItem.model.js"></script>
+    <script src="./src/news/models/newsItem.collection.js"></script>
+    <script src="./src/news/models/newsList.model.js"></script>
+    <script src="./src/news/controllers/newsItem.controller.js"></script>
+    <script src="./src/news/controllers/newsList.controller.js"></script>
+    <script src="./src/main/routers/routers.js"></script>
+    <script src="./src/main/controllers/main.js"></script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=300738813384830&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

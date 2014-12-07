@@ -1,0 +1,36 @@
+<div class="listViewContainer">
+  <div class="leftArea">
+    <div class="titles"><h4>Latest News</h4> <div class="linec"></div></div>
+
+    <div class="filterOptions">
+      <label class="categorySelector"> Choose a category:
+        <select id="categoryFilter">
+        <option value="" <% if(selectedCategory === '') print('selected') %>>All</option>
+        <% _.each(categories, function(cat) { %>
+          <option value="<%= cat %>" <% if(selectedCategory === cat) print('selected') %>><%= cat %> </option>
+         <% }) %>
+      </select>
+    </label>
+    <label> Sort By:
+      <select id="sortBySelector">
+        <option value=""> Default </option>
+        <option value="timestamp" <% if(sortBy === 'timestamp') print('selected') %> >Date </option>
+        <option value="category" <% if(sortBy === 'category') print('selected') %> >Category</option>
+      </select>
+      <select id="sortOrderSelector">
+        <option value="asc" <% if(order === 'asc') print('selected') %> >Asc</option>
+        <option value="desc"<% if(order === 'desc') print('selected') %> >Desc</option>
+      </select>
+    </label>
+
+
+    </div>
+
+    <div class="warning <% if(!hiddenItems) {print("hidden")} %>">
+      You have hidden some items <a href="#" class="restoreHiddenItems">Restore</a>
+    </div>
+    <ul class="newsFeed">
+
+    </ul>
+  </div>
+</div>

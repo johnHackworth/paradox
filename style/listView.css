@@ -1,0 +1,116 @@
+.listViewContainer, .listItemContainer {
+  background: url(../assets/bg2_03.gif);
+  border-radius: 6px;
+  border: solid 1px #000;
+  box-shadow: inset 1px 1px 1px #333;
+}
+
+
+.leftArea {
+  width: 64%;
+  display: inline-block;
+  padding: 0 3% 20px;
+  border-radius: 6px 0 0 6px;
+  background: url(../assets/bg_03.gif);
+  border-right: solid 1px #000000;
+  box-shadow: inset 1px 1px 1px #343434;
+}
+
+.rightArea {
+  width:30%;
+  display: inline-block;
+  padding-top: 24px;
+  padding: 30px 0;
+  vertical-align: top;
+}
+
+
+.titles h4 , .newstitle h4{
+  background: url(../assets/bg_03.gif);
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.linec {
+  border-top: solid 1px #000;
+  height: 0px;
+  border-bottom: solid 1px #383838;
+  position: relative;
+  width: 100%;
+  top: 15px;
+}
+
+.titles .linec {
+  top: -40px;
+}
+
+.newstitle .linec {
+  top: -40px;
+}
+
+
+ul {
+  padding:0;
+}
+
+.newsFeed li {
+  list-style-type: none;
+  margin: 0px 0;
+  padding: 10px 0 20px;
+  width: 100%;
+  border-radius: 3px;
+  display: block;
+
+}
+
+.newstitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cc3333;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.newsItem p{
+  padding: 20px 0;
+  font-size: 14px;
+  color: #919191;
+  line-height: 18px;
+  margin-bottom: 10px
+}
+
+.category {
+  display: inline-block;
+  margin-left: 25px;
+  background-color: rgba(160, 200, 255, 0.5);
+  padding: 5px 10px;
+}
+
+.date {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.fb-like {
+  float: right;
+}
+
+.linkButton:hover {
+  color: #FFff55;
+  float: left;
+}
+
+.linkButton {
+  font-size: 18px;
+  font-weight: bold;
+  color: #cccc77;
+  float: left;
+  margin-right: 15px;
+}
+
+.categorySelector {
+  padding-right: 30px;
+}
